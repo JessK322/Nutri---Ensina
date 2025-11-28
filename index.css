@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    background: #ffffff;
+    color: #000000;
+    line-height: 1.7;
+    font-size: 16px;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: linear-gradient(135deg, #4caf50, hsl(83, 66%, 73%), #5feb6b);
+    color: #000000;
+    text-align: center;
+    padding: 3rem 2rem 2rem;
+    border-bottom: 2px solid #c8e6c9;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    margin-top: 0.5rem;
+}
+
+.datetime {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #000000;
+    opacity: 0.8;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.tema {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    width: 45%;
+    min-width: 300px;
+    max-width: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tema:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.tema h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+.tema p {
+    font-size: 1rem;
+    color: #000000;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.7rem 1.5rem;
+    background-color: #3ba841;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #66bb6a;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #d8fff1;
+    color: #000000;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.95rem;
+    border-top: 1px solid rgb(215, 223, 145);
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem 1rem;
+    }
+
+    .tema {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}

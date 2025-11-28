@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nutrição Fácil</title>
+  <link rel="stylesheet" href="iniciante.css" />
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>Nutrição Fácil</h1>
+    <p>Aprenda o básico sobre alimentação saudável de forma simples!</p>
+
+    <div class="botoes-header">
+      <button onclick="window.location.href='index.html'">Menu</button>
+      <button onclick="window.location.href='profissional.html'">Nutrição Científica</button>
+    </div>
+  </div>
+</header>
+
+
+  <main class="container">
+    <section class="info">
+      <h2>O que é uma alimentação saudável?</h2>
+      <p>"Uma alimentação saudável é aquela que garante o fornecimento de todos os nutrientes necessários para o funcionamento do nosso corpo. Investir em alimentos pouco processados e reduzir o consumo de gordurras, sal e açúcar são algumas das medidas que podem melhorar a sua alimentação."</p>
+    </section>
+
+    <section class="beneficios">
+      <h2>Benefícios da Alimentação Saudável:</h2>
+      <ul class="lista-beneficios">
+        <li>Mais energia e disposição</li>
+        <li>Melhora da concentração e memória</li>
+        <li>Fortalecimento do sistema imunológico</li>
+        <li>Controle de peso corporal</li>
+        <li>Prevenção de doenças crônicas (diabetes, hipertensão, etc.)</li>
+      </ul>
+    </section>
+
+    <section class="erros">
+      <h2>Erros Comuns de Iniciantes</h2>
+      <ul class="lista-erros">
+        <li>Cortar todos os carboidratos</li>
+        <li>Pular refeições achando que emagrece</li>
+        <li>Exagerar em alimentos "fitness" industrializados</li>
+        <li>Não beber água suficiente</li>
+        <li>Seguir dietas da moda sem orientação</li>
+      </ul>
+    </section>
+
+    <section class="dicas">
+      <h2>Dicas Rápidas para Começar Bem</h2>
+      <ol class="lista-dicas">
+        <li>Planeje suas refeições com antecedência</li>
+        <li>Faça uma lista de compras com alimentos saudáveis</li>
+        <li>Tenha sempre uma garrafinha de água com você</li>
+        <li>Cozinhe mais em casa e evite ultraprocessados</li>
+        <li>Sirva porções moderadas no prato</li>
+      </ol>
+    </section>
+
+    <section class="links">
+      <h2>Fontes confiáveis para se aprofundar</h2>
+      <ul class="lista-links">
+        <li><a href="https://www.saudebemestar.pt/pt/blog-saude/qualidade-de-vida/" target="_blank">SAUDE BEMESTAR.NET - Qualidade de vida</a></li>
+        <li><a href="https://g1.globo.com/saude/bem-estar/" target="_blank">G1 - Saúde e bem-estar: seu portal de conteúdo sobre autocuidado</a></li>
+        <li><a href="https://www.nutren.com.br/mulher/artigos/ciencia-da-nutricao/bem-estar-saude" target="_blank">NUTREN - A importância do bem-estar para a saúde e a beleza</a></li>
+        <li><a href="https://fiibo.com.br/qual-e-a-importancia-da-saude-e-bem-estar/" target="_blank">FIIBO - Qual é a importância da saúde e bem-estar?</a></li>
+      </ul>
+    </section>
+
+    <section class="alimentos">
+      <h2>Alimentos recomendados do dia</h2>
+      <div class="cards" id="cards-alimentos">
+      </div>
+    </section>
+
+    <section class="imc-section" id="imc">
+      <h2>Calculadora de IMC</h2>
+      <p>Descubra se seu peso está adequado para sua altura:</p>
+
+      <div class="form-group">
+        <input type="number" id="peso" placeholder="Peso em kg" />
+        <input type="number" step="0.01" id="altura" placeholder="Altura em metros" />
+        <button onclick="calcularIMC()">Calcular IMC</button>
+      </div>
+      <div id="resultado"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Nutri-Ensina. Todos os direitos reservados. Site criado por: Jéssica Bernardo, Edylane Augusto, Carla Eluize, Luciane Araújo e Geovanna Mendeiros.</p>
+  </footer>
+
+  <script src="iniciante.js"></script>
+</body>
+</html>

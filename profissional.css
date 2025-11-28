@@ -1,0 +1,177 @@
+.conteudo-cientifico {
+  max-width: 900px;
+  margin: 2rem auto;
+  line-height: 1.8;
+  text-align: justify;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.conteudo-cientifico h2 {
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+  border-left: 5px solid #4caf50;
+  padding-left: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.conteudo-cientifico p {
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
+}
+
+.conteudo-cientifico ul {
+  margin-left: 1.2rem;
+  margin-bottom: 1.5rem;
+  list-style-type: "📎 ";
+}
+
+.conteudo-cientifico a {
+  color: #388e3c;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.conteudo-cientifico a:hover {
+  color: #1b5e20;
+  text-decoration: underline;
+}
+
+.botoes-header {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .conteudo-cientifico {
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .conteudo-cientifico h2 {
+    font-size: 1.4rem;
+  }
+
+  .botoes-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+}
+
+.biblioteca {
+  background: #e8f5e9;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.biblioteca h2 {
+  color: #2e7d32;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  border-left: 6px solid #4caf50;
+  padding-left: 0.75rem;
+}
+
+.artigo {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.artigo:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+}
+
+.artigo h3 {
+  color: #388e3c;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.artigo p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.artigo a {
+  color: #4caf50;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.artigo a:hover {
+  color: #2e7d32;
+  text-decoration: underline;
+}
+.mitos-verdades {
+  background: #f1f8e9;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.mitos-verdades h2 {
+  color: #33691e;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  border-left: 6px solid #689f38;
+  padding-left: 0.75rem;
+}
+
+.mito-verdade-item {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  border-left: 5px solid transparent;
+}
+
+.mito-verdade-item:hover {
+  background-color: #e6f2d5;
+}
+
+.mito-verdade-item.mito {
+  border-left-color: #d32f2f;
+}
+
+.mito-verdade-item.verdade {
+  border-left-color: #388e3c;
+}
+
+.mito-verdade-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #2e7d32;
+}
+
+.mito-verdade-item p {
+  display: none;
+  color: #555;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+  line-height: 1.4;
+}
+
+.mito-verdade-item.expanded p {
+  display: block;
+}
